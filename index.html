@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bird{
+            width: 145px;
+            height: 145px;
+            background-image: url(./img/Screenshot__1576__copy-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: flybird;
+            animation-duration: 0.3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(3);
+            transform: rotate(45deg);
+            
+        }
+
+
+        @keyframes flybird {
+            0%{
+                background-position: 0px 0px;
+            }
+            100%{
+                background-position: -447px 0px;
+            }
+        }
+
+
+        .box1{
+            animation-name: box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+        }
+
+        @keyframes box {
+            0%{
+                left: 0%;
+            }
+
+            100%{
+                left: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body><div class="box1">
+    <div class="bird"></div>
+</div>
+</body>
+</html>
